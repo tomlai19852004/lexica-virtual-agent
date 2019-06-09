@@ -1,0 +1,26 @@
+{
+  "name": "lexica-virtual-agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomlai19852004/lexica-virtual-agent.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomlai19852004/lexica-virtual-agent/issues"
+  },
+  "homepage": "https://github.com/tomlai19852004/lexica-virtual-agent#readme",
+  "dependencies": {
+    "@types/dotenv": "^6.1.1",
+    "dotenv": "^8.0.0",
+    "lexica-dialog-core": "^1.0.1",
+    "lexica-dialog-facebook-messenger": "^1.0.3"
+  }
+}

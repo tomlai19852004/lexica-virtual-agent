@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/index.js",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,10 @@
   "dependencies": {
     "@types/dotenv": "^6.1.1",
     "dotenv": "^8.0.0",
-    "lexica-dialog-core": "^1.0.1",
+    "lexica-dialog-core": "^1.0.3",
     "lexica-dialog-facebook-messenger": "^1.0.3"
+  },
+  "devDependencies": {
+    "typescript": "^3.5.1"
   }
 }

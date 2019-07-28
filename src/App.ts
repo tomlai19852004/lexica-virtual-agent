@@ -13,7 +13,7 @@ import {
 	Middleware,
 	PreProcessor,
 	PostProcessor,
-	Executor,
+	Executor
 } from 'lexica-dialog-core/dist/Api';
 import {
 	FacebookMessenger,
@@ -26,10 +26,13 @@ import { Config } from 'lexica-dialog-model/dist/Config';
 dotenv.config();
 
 const env = process.env;
+
 const ENV_CONFIGS = {
 	PORT: env.PORT as string,
 	MONGO_URL: env.MONGO_URL as string,
 	REDIS_URL: env.REDIS_URL as string,
+	REDIS_HOST: env.REDIS_HOST as string,
+	REDIS_PORT: env.REDIS_PORT as string,
 	// NLP_URL: env.NLP_URL as string,
 	AWS_ACCESS_KEY_ID: env.AWS_ACCESS_KEY_ID as string,
 	AWS_SECRET_ACCESS_KEY: env.AWS_SECRET_ACCESS_KEY as string,
@@ -64,6 +67,9 @@ const config: BotServerConfig = {
 		url: ENV_CONFIGS.MONGO_URL,
 	},
 	redis: {
+		host: ENV_CONFIGS.REDIS_HOST,
+		port: parseInt(ENV_CONFIGS.REDIS_PORT),
+		// redis://localhost
 		url: ENV_CONFIGS.REDIS_URL,
 	},
 	// nlp: {
